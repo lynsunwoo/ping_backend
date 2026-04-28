@@ -23,7 +23,8 @@ const adminCategoriesRoutes = require("./routes/adminCategories");  // 관리자
 
 
 const app = express();
-const PORT = 9070;
+// const PORT = 9070;
+const PORT = process.env.PORT || 3000;
 
 // 미들웨어(가장 위)
 app.use(cors());
